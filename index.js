@@ -65,13 +65,10 @@ app.post('/sendMessage', async (req, res) => {
   const data = req.body;
 try {
   const one = sendData(data);
-  console.log(one)
-  one.then((result)=>{
-    console.log(result,'this is the result')
-  })
+  res.json('success')
 } catch (error) {
   console.log(error);
-  res.json('server Error')
+  res.json('Error')
 }
 
 });
