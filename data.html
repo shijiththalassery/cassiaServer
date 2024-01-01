@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakSphere Registration</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font */
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0.1 10px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font */
+        }
+
+        .underline {
+            border-bottom: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .message {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font */
+        }
+
+        .background-image {
+            background-image: url('https://res.cloudinary.com/dk1eug9ms/image/upload/v1701245707/cassia/1_-transformed-removebg_cxhw4p.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="heading">Cassia Events</div>
+        <div class="underline"></div>
+        <div class="message">Hello Sanith Manoharan, a new customer is inquiring about the details of your event management services.</div>
+        <div style="text-align: left;">
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">Name: <b>{{name}}</b></li>
+                <li style="margin-bottom: 10px;">Phone: <b>{{phone}}</b></li>
+                <li style="margin-bottom: 10px;">Email: <b>{{email}}</b></li>
+                <li style="margin-bottom: 10px;">Place: <b>{{place}}</b></li>
+                <li style="margin-bottom: 10px;">District: <b>{{district}}</b></li>
+                <li style="margin-bottom: 10px;">Event: <b>{{event}}</b></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
