@@ -10,9 +10,6 @@ const nodemailer = require('nodemailer');
 
 app.use(cors());
 
-const accountSid = process.env.VITE_API_ACCOUNT_SID;
-const authToken = process.env.VITE_API_AUTH_TOKEN;
-const client = twilio(accountSid, authToken);
 
 app.get("/about", async(req, res) => {
     console.log('entering body');
